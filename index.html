@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="src/variables.js" defer></script>
+    <script src="src/board.js" defer></script>
+    <script src="src/tetromino.js" defer></script>
+    <script src="src/app.js" defer></script>
+    <title>Tetris</title>
+  </head>
+  <body>
+    <div class="grid">
+      <canvas id="board"> </canvas>
+      <div class="play-stats">
+        <div class="game-stats">
+          <h1>Tetris</h1>
+          <p>Name: <span id="name"></span></p>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+          <p>Level: <span id="level">0</span></p>
+          <canvas id="next-tetrominoes"></canvas>
+        </div>
+        <label for = "user-name">Enter your name: </label>
+        <input id = "user-name" type="text">
+        <button class="play">play</button>
+      </div>
+      <div id="best-players">
+        <h2>Hall of fame:</h2>
+        <ol id="best-stats"></ol>
+      </div>
+    </div>
+    <div id="pause">
+      <h2>game paused</h2>
+    </div>
+    <div id="game-over">
+      <h2>game over</h2>
+      <h2 id="final-score"></h2>
+      <button class="play">play again</button>
+    </div>
+  </body>
+</html>
