@@ -7,7 +7,7 @@ movePieces();
 initNext();
 let bestStatsArr = [];
 let bestStatsEl = null;
-if (bestStatsArr.length > 0) {
+if ( JSON.parse(localStorage.getItem('bestStats'))) {
 renderStats();
 }
 
