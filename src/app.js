@@ -7,7 +7,9 @@ movePieces();
 initNext();
 let bestStatsArr = [];
 let bestStatsEl = null;
+if (bestStatsArr.length > 0) {
 renderStats();
+}
 
 const moves = {
   ["ArrowRight"]: (p) => ({ ...p, x: p.x + 1 }),
